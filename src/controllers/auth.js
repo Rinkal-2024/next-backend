@@ -64,14 +64,14 @@ const registerUser = async (req, res) => {
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL, // Your Gmail email
-        pass: process.env.EMAIL_PASSWORD, // Your Gmail password
+        user:'rinkals263@gmail.com', // Your Gmail email
+        pass:'kizw jnka rjhh frgn', // Your Gmail password
       },
     });
 
     // Email options
     let mailOptions = {
-      from:'shahilkumarpatel93@gmail.com', // Your Gmail email
+      from:'rinkals263@gmail.com', // Your Gmail email
       to: 'rinkals263@gmail.com', // User's email
       subject: 'Verify your email',
       html: htmlContent, // HTML content with OTP and user email

@@ -64,15 +64,15 @@ const registerUser = async (req, res) => {
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user:'rinkals263@gmail.com', // Your Gmail email
-        pass:'kizw jnka rjhh frgn', // Your Gmail password
+        user: process.env.EMAIL, // Your Gmail email
+        pass: process.env.EMAIL_PASSWORD, // Your Gmail password
       },
     });
 
     // Email options
     let mailOptions = {
-      from:'rinkals263@gmail.com', // Your Gmail email
-      to: 'rinkals263@gmail.com', // User's email
+      from: process.env.EMAIL, // Your Gmail email
+      to: user.email, // User's email
       subject: 'Verify your email',
       html: htmlContent, // HTML content with OTP and user email
     };
@@ -233,12 +233,10 @@ const forgetPassword = async (req, res) => {
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user:'shahilkumarpatel93@gmail.com', // Your Gmail email
-        pass: 'mcwx vbfj tsml argp' // Your Gmail password
+        user: process.env.EMAIL, // Your Gmail email
+        pass: process.env.EMAIL_PASSWORD, // Your Gmail password
       },
     });
-
-    
 
     // Email options
     let mailOptions = {
@@ -412,8 +410,8 @@ const resendOtp = async (req, res) => {
 
     // Email options
     let mailOptions = {
-      from:"rinkals263@gmail.com", // Your Gmail email
-      to: "rinkals263@gmail.com", // User's email
+      from: process.env.EMAIL, // Your Gmail email
+      to: user.email, // User's email
       subject: 'Verify your email',
       html: htmlContent, // HTML content with OTP and user email
     };

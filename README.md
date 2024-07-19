@@ -3,7 +3,7 @@
 ## Backend Setup
 Create a .env file in the root of your backend directory and add the following environment variables:
 
-```
+```.env
 MONGODB_URI=
 PORT=
 receiving_email=

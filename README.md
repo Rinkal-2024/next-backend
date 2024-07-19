@@ -26,7 +26,7 @@ Running the Server
 ## Frontend Setup
 Create a .env.development and .env.production files with the same variables in the root of your frontend directory and add the following environment variables:
 ```
-BASE_URL=
+BASE_URL= // Base URL for the backend API
 STRIPE_PUBLIC_KEY=
 STRIPE_SECRET_KEY=
 CLOUDINARY_CLOUD_NAME=

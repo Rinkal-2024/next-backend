@@ -4,10 +4,11 @@
 Create a .env file in the root of your backend directory and add the following environment variables:
 
 ```.env
-MONGODB_URI=
-PORT=
-receiving_email=
+MONGODB_URI=  // MongoDB connection string
+PORT=   // Port number for the server
+EMAIL=
 EMAIL_PASSWORD=
+RECEIVING_EMAIL=
 SHIPPING_FEE=
 STRIPE_SECRET_KEY=
 CLOUDINARY_SECRET_KEY=
@@ -22,6 +23,7 @@ Installing Dependencies
 Running the Server
 ```bash
 npm start
+
 ```
 
 
@@ -32,7 +34,7 @@ BASE_URL= // Base URL for the backend API
 STRIPE_PUBLIC_KEY=
 STRIPE_SECRET_KEY=
 CLOUDINARY_CLOUD_NAME=
-CURRENCY=USD
+CURRENCY=
 SHIPPING_FEE=
 JWT_SECRET=
 ```

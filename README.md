@@ -18,7 +18,9 @@ JWT_SECRET=
 ```
 
 Installing Dependencies
-```npm install```
+```bash
+npm install
+```
 
 Running the Server
 ```bash

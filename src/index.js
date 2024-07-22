@@ -68,7 +68,9 @@ app.use('/api', delete_fileRoutes);
 app.get('/', (req, res) => {
   res.send('This is a GET API');
 });
-
+app.get('/home', (req, res) => {
+  res.send('Hello');
+});
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

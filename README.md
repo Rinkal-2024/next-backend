@@ -20,6 +20,7 @@ JWT_SECRET=
 Installing Dependencies
 ```bash
 npm install
+
 ```
 
 Running the Server
